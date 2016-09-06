@@ -19,7 +19,6 @@ public class Rectangle
         this.left = left;
         this.width = width;
         this.height = height;
-
     }
 
     public Rectangle(double top, double left)
