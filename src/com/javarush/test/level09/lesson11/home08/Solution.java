@@ -1,6 +1,7 @@
 package com.javarush.test.level09.lesson11.home08;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /* Список из массивов чисел
 Создать список, элементами которого будут массивы чисел.
@@ -19,10 +20,17 @@ public class Solution
     public static ArrayList<int[]> createList()
     {
         ArrayList<int[]> list = new ArrayList<>();
-        int[] arr1 = {1,2,3,4,5};
-        list.add(arr1);
-        int[] arr1 = {1,2,3,4,5};
-        list.add(arr1);
+        int[] counts = {5,2,4,7,0};
+        for (int i = 0; i < counts.length; i++)
+        {
+            Random rand = new Random();
+            int[] arr = new int[counts[i]];
+            for (int j = 0; j < arr.length; j++)
+            {
+                arr[j] = rand.nextInt();
+            }
+            list.add(arr);
+        }
         return list;
     }
 

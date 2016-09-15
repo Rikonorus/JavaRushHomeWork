@@ -6,7 +6,7 @@ package com.javarush.test.level09.lesson11.home07;
 
 public class Solution
 {
-    public int A = 5;
+  /*  public int A = 5;
     public int B = 2 * A;
     public int C = A * B;
     public int D = A * B;
@@ -23,5 +23,5 @@ public class Solution
     {
         return A;
     }
-
+*/
 }
