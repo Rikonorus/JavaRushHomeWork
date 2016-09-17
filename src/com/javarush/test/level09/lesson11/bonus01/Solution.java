@@ -21,7 +21,7 @@ public class Solution
         java.io.FileOutputStream fileOutputStream = new java.io.FileOutputStream(destinationFileName);
 
         int count = 0;
-        while (fileInputStream.available()>0);
+        while (fileInputStream.available()>0)
         {
             int data = fileInputStream.read();
             fileOutputStream.write(data);

@@ -6,12 +6,12 @@ package com.javarush.test.level09.lesson11.home07;
 
 public class Solution
 {
-  /*  public int A = 5;
-    public int B = 2 * A;
+    public static int A = 5;
+    public static int B = 2 * A;
     public int C = A * B;
-    public int D = A * B;
+    public static int D = A * B;
 
-    public static void main(String[] args)
+    public void main(String[] args)
     {
         Solution room = new Solution();
         room.A = 5;
@@ -23,5 +23,5 @@ public class Solution
     {
         return A;
     }
-*/
+
 }
