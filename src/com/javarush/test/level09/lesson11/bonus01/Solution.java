@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 Задача: Программа вводит два имени файла. И копирует первый файл на место заданное вторым именем.
 */
 
-public class Solution
+/*public class Solution
 {
     public static void main(String[] args) throws IOException
     {
@@ -17,8 +17,8 @@ public class Solution
         String sourceFileName = reader.readLine();
         String destinationFileName = reader.readLine();
 
-        java.io.FileInputStream fileInputStream = new java.io.FileInputStream(sourceFileName);
-        java.io.FileOutputStream fileOutputStream = new java.io.FileOutputStream(destinationFileName);
+        java.io.FileInputStream fileInputStream = new java.io.FileOutputStream(destinationFileName);
+        java.io.FileInputStream fileOutputStream = new java.io.FileOutputStream(destinationFileName);
 
         int count = 0;
         while (fileInputStream.available()>0)
@@ -33,4 +33,4 @@ public class Solution
         fileInputStream.close();
         fileOutputStream.close();
     }
-}
+}*/

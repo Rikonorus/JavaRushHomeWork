@@ -15,8 +15,13 @@ public class Solution
     {
         Solution room = new Solution();
         room.A = 5;
+        Solution room2 = new Solution();
+        room2.A = 6;
 
         Solution.D = 5;
+        System.out.println(room.A);
+        System.out.println(room2.A);
+        System.out.println(Solution.A);
     }
 
     public int getA()
