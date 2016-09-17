@@ -3,7 +3,6 @@ package com.javarush.test.level09.lesson11.bonus03;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /* Задача по алгоритмам
 Задача: Пользователь вводит с клавиатуры список слов (и чисел). Слова вывести в возрастающем порядке, числа - в убывающем.
@@ -41,7 +40,7 @@ public class Solution
         }
 
         String[] array = list.toArray(new String[list.size()]);
-        Solution.sort(array);
+        sort(array);
 
         for (String x : array)
         {
@@ -52,34 +51,18 @@ public class Solution
     public static void sort(String[] array)
     {
         //напишите тут ваш код
-        ArrayList<Integer> numbers = new ArrayList<>();
-        ArrayList<String> strings = new ArrayList<>();
-
-        for (String s : array)
+        for (int i = 0; i < array.length; i++)
         {
-            if (isNumber(s))
+            for (int j = i + 1; j < array.length; j++)
             {
-                numbers.add(Integer.parseInt(s));
-            } else
-            {
-                strings.add(s);
+                if (isNumber(array[i]) && isNumber(array[j]) && Integer.parseInt(array[i]) < Integer.parseInt(array[j]) || !isNumber(array[i]) && !isNumber(array[j]) && isGreaterThan(array[i], array[j]))
+                {
+                    String swapString = array[i];
+                    array[i] = array[j];
+                    array[j] = swapString;
+                }
             }
-
         }
-        Integer[] numbersI = numbers.toArray(new Integer[numbers.size()]);
-        String[] stringsS = strings.toArray(new String[strings.size()]);
-        Arrays.sort(stringsS);
-        Arrays.sort(numbersI);
-
-        for (int i = 0; i < stringsS.length; i++)
-        {
-            array[i] = stringsS[i];
-        }
-        for (int i = 0; i < numbersI.length; i++)
-        {
-            array[array.length - 1 - i] = numbersI[i].toString();
-        }
-
     }
 
     //Метод для сравнения строк: 'а' больше чем 'b'
