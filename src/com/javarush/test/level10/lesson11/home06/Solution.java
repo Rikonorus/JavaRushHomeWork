@@ -5,7 +5,7 @@ package com.javarush.test.level10.lesson11.home06;
 */
 
 
-import java.util.ArrayList;
+
 
 public class Solution
 {
@@ -17,12 +17,12 @@ public class Solution
     public static class Human
     {
 
-        public String fName;
-        public String sName;
-        public boolean sex;
-        public int age;
-        public ArrayList<Human> parent;
-        public ArrayList<Human> children;
+        private String fName;
+        private String sName;
+        private boolean sex;
+        private int age;
+        private Human parent;
+        private Human child;
 
 
         public Human()
@@ -64,7 +64,7 @@ public class Solution
             this.age = age;
         }
 
-        public Human(String fName, String sName, boolean sex, int age, ArrayList<Human> parent)
+        public Human(String fName, String sName, boolean sex, int age, Human parent)
         {
 
             this.fName = fName;
@@ -74,7 +74,7 @@ public class Solution
             this.parent = parent;
         }
 
-        public Human(String fName, String sName, boolean sex, int age, ArrayList<Human> parent, ArrayList<Human> children)
+        public Human(String fName, String sName, boolean sex, int age, Human parent, Human child)
         {
 
             this.fName = fName;
@@ -82,7 +82,7 @@ public class Solution
             this.sex = sex;
             this.age = age;
             this.parent = parent;
-            this.children = children;
+            this.child = child;
         }
 
         public Human(String fName, boolean sex)
