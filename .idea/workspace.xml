@@ -1082,7 +1082,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474789632163</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="12.6 done">
+      <created>1474814823609</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1474814823609</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1203,7 +1210,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MyJavaProject from http://javarush.ru/&#10;   7.9 &#10;   List&lt;T&gt;" />
     <MESSAGE value="MyJavaProject from http://javarush.ru/&#10;   7.9 &#10;   finished" />
     <MESSAGE value="MyJavaProject from http://javarush.ru/&#10;   7.12.3&#10;   finished" />
     <MESSAGE value="MyJavaProject from http://javarush.ru/&#10;              7.12&#10;              finished&#10;              &#10;7.12.b3              &#10;немного жульничества) сортировака не моя" />
@@ -1228,7 +1234,8 @@
     <MESSAGE value="11.11 done" />
     <MESSAGE value="12.5 done" />
     <MESSAGE value="12.4 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.4 done" />
+    <MESSAGE value="12.6 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.6 done" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
