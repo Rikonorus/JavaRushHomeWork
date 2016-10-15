@@ -14,6 +14,7 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter file = new PrintWriter(reader.readLine());
+
         String line;
         while (true)
         {
