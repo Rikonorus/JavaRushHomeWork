@@ -10,18 +10,40 @@ package com.javarush.test.level15.lesson02.task02;
 7. В классе Dragon метод getSize должен возвращать строку "Дракон большой, " + [getSize родительского класса].
 */
 
-public class Solution {
+public class Solution
+{
     //добавьте классы Goose и Dragon тут
 
-    public static class BigAnimal {
-        protected String getSize() {
+    public static class BigAnimal
+    {
+        protected String getSize()
+        {
             return "как динозавр";
         }
     }
 
-    public static class SmallAnimal {
-        String getSize() {
+    public static class SmallAnimal
+    {
+        String getSize()
+        {
             return "как кошка";
+        }
+    }
+
+    public static class Goose extends SmallAnimal
+    {
+        public String getSize()
+        {
+            return "Гусь маленький, " + super.getSize();
+        }
+    }
+
+    public static class Dragon extends BigAnimal
+    {
+
+        public String getSize()
+        {
+            return "Дракон большой, " + super.getSize();
         }
     }
 }
