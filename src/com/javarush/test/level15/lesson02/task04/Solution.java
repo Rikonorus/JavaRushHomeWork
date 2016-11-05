@@ -10,18 +10,67 @@ package com.javarush.test.level15.lesson02.task04;
 5.2. markTwainOutput для книг Марка Твена.
 */
 
-public class Solution {
-    public static void main(String[] args) {
+import java.util.LinkedList;
+import java.util.List;
+
+public class Solution
+{
+    public static void main(String[] args)
+    {
         List<Book> books = new LinkedList<Book>();
         books.add(new MarkTwainBook("Tom Sawyer"));
         books.add(new AgathaChristieBook("Hercule Poirot"));
         System.out.println(books);
     }
 
-    public abstract static class Book {
+    public static class MarkTwainBook extends Book
+    {
+        private String bookName;
+
+        public MarkTwainBook(String bookName)
+        {
+            super("Mark Twain");
+            this.bookName = bookName;
+        }
+
+        public Book getBook()
+        {
+            return this;
+        }
+
+        public String getName()
+        {
+            return this.bookName;
+        }
+    }
+
+    public static class AgathaChristieBook extends Book
+    {
+        private String bookName;
+
+        public AgathaChristieBook(String bookName)
+        {
+            super("Agatha Christie");
+            this.bookName = bookName;
+        }
+
+        public Book getBook()
+        {
+            return this;
+        }
+
+        public String getName()
+        {
+            return this.bookName;
+        }
+    }
+
+    public abstract static class Book
+    {
         private String author;
 
-        public Book(String author) {
+        public Book(String author)
+        {
             this.author = author;
         }
 
@@ -29,17 +78,26 @@ public class Solution {
 
         public abstract String getName();
 
-        private String getOutputByBookType() {
+        private String getOutputByBookType()
+        {
             String agathaChristieOutput = author + ", " + getBook().getName() + " is a detective";
             String markTwainOutput = getBook().getName() + " book was written by " + author;
 
-            String output = "output";
+            String output = "";
             //Add your code here
+            if (this instanceof MarkTwainBook)
+            {
+                output = markTwainOutput;
+            } else if (this instanceof AgathaChristieBook)
+            {
+                output = agathaChristieOutput;
+            }
 
             return output;
         }
 
-        public String toString() {
+        public String toString()
+        {
             return getOutputByBookType();
         }
     }
